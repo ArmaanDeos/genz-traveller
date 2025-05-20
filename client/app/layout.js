@@ -15,7 +15,7 @@ const lato = Lato({
 });
 
 export const metadata = {
-  title: "Airline Reservation | Cheap Flight Booking - GenZTraveller",
+  title: "GenZTraveller - Cheap Flight Booking  | Airline Reservation  ",
   description:
     "Book cheap airline tickets online with GenZTraveller. 24/7 customer support at (844) 930-0173. Enjoy great deals on domestic and international flights.",
   keywords: [

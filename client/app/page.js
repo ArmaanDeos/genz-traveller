@@ -49,6 +49,7 @@ const HomePage = () => {
         <meta name="twitter:title" content={metadata.title} />
         <meta name="twitter:description" content={metadata.description} />
       </Head>
+
       <Header />
       <MobilePromo />
       <BannerSection

@@ -4,31 +4,34 @@ import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 import SectionCTA from "./SectionCTA";
 
-const reviews = [
+const baseReviews = [
   {
     name: "Sophie Lane",
     role: "Digital Nomad",
     image: "https://randomuser.me/api/portraits/women/81.jpg",
     rating: 5,
-    text: "Booking over the phone saved me hours—and I landed a fare that wasn't even online! Highly recommend for frequent travelers.",
+    text: (airline) =>
+      `Booking over the phone saved me hours—and I landed a ${airline} fare that wasn't even online! Highly recommend for frequent travelers.`,
   },
   {
     name: "James Walker",
     role: "Last-Minute Traveler",
     image: "https://randomuser.me/api/portraits/men/75.jpg",
     rating: 4,
-    text: "Incredible savings and no hold time. Got a last-minute flight for half the price of major sites. I was genuinely impressed.",
+    text: (airline) =>
+      `Incredible savings and no hold time. Got a last-minute ${airline} flight for half the price of major sites. I was genuinely impressed.`,
   },
   {
-    name: "Priya Desai",
+    name: "Emma Johnson",
     role: "Family Vacation Planner",
     image: "https://randomuser.me/api/portraits/women/68.jpg",
     rating: 5,
-    text: "The rep was patient, friendly, and got us the perfect family package. Smoothest booking experience I’ve had in years!",
+    text: (airline) =>
+      `The rep was patient, friendly, and got us the perfect family package with ${airline}. Smoothest booking experience I’ve had in years!`,
   },
 ];
 
-const CustomerReviews = () => {
+const CustomerReviews = ({ airline = "Iberia" }) => {
   return (
     <section className="py-20 px-4 bg-gradient-to-br from-blue-50 to-white">
       <div className="max-w-6xl mx-auto text-center mb-14">
@@ -46,12 +49,12 @@ const CustomerReviews = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-gray-600 mt-3 text-lg"
         >
-          Genuine stories from real customers who booked smarter with us.
+          Genuine stories from real customers who booked smarter with {airline}.
         </motion.p>
       </div>
 
       <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
-        {reviews.map((review, index) => (
+        {baseReviews.map((review, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 30 }}
@@ -74,7 +77,7 @@ const CustomerReviews = () => {
             </div>
 
             <p className="text-gray-700 text-sm leading-relaxed mb-4">
-              “{review.text}”
+              “{review.text(airline)}”
             </p>
 
             <div className="flex items-center">
@@ -92,15 +95,14 @@ const CustomerReviews = () => {
         ))}
       </div>
 
-      {/* Updated Summary Paragraph */}
       <div className="text-center mt-16 max-w-4xl mx-auto px-4">
         <p className="text-lg text-gray-800 font-medium leading-relaxed">
           Join thousands of satisfied travelers who trust{" "}
           <span className="font-bold text-blue-600">Genztraveller</span> for
-          exclusive phone-only flight deals. With zero hold time, flexible
-          changes, and 24/7 live support, your next adventure is just a call
-          away.
-          <a href="tel:+1-(844) 930-0173">
+          exclusive phone-only {airline} flight deals. With zero hold time,
+          flexible changes, and 24/7 live support, your next adventure is just a
+          call away.
+          <a href="tel:+1-(844)930-0173">
             <span className="block mt-2 font-semibold text-blue-500 animate-pulse">
               Call now — the skies are waiting!
             </span>

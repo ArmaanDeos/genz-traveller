@@ -11,7 +11,7 @@ const BannerSection = ({
   heading = "Book Your Dream Trip Today!",
   subheading = "Best flight deals, no hidden fees, and 24/7 support.",
   additionalHeading = "Trusted by Thousands of Travelers",
-  bgImage = "/images/banner-bg.jpg", // Default image
+  bgImage = "/images/banner-bg.jpg",
 }) => {
   const scrollToNextSection = () => {
     const nextSection = document.getElementById("next-section");
@@ -89,10 +89,10 @@ const BannerSection = ({
               </Link>
               <Link
                 href="tel:+1-(844)930-0173"
-                className="inline-flex items-center gap-2 px-6 py-3 border border-yellow-400 text-yellow-300 font-bold rounded-full hover:bg-yellow-400 hover:text-black transition-all duration-300"
+                className="inline-flex items-center gap-2 px-6 py-3 border border-yellow-400 text-yellow-300 font-bold rounded-full hover:bg-yellow-400 hover:text-black transition-all duration-300 "
               >
                 <PhoneCall className="animate-pulse" />
-                +1 (888) 597-0108
+                +1 (844) 930-0173
               </Link>
             </motion.div>
 

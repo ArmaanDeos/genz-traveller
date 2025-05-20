@@ -1,9 +1,9 @@
 "use client";
 import React, { Suspense } from "react";
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Loader from "@/components/LoadingPage";
 import dynamic from "next/dynamic";
+import Header from "@/components/Header";
 
 // Dynamically import the client component
 const FlightResultClient = dynamic(
@@ -17,7 +17,7 @@ const FlightResultClient = dynamic(
 const FlightResultPage = () => {
   return (
     <>
-      <Navbar />
+      <Header />
       <Suspense fallback={<Loader />}>
         <FlightResultClient />
       </Suspense>

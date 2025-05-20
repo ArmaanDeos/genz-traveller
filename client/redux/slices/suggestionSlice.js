@@ -6,7 +6,7 @@ export const fetchSuggestions = createAsyncThunk(
   async (query, thunkAPI) => {
     try {
       const response = await axios.get(
-        `https://skyjoy-api.onrender.com/api/flights/place-suggestions?query=${query}`
+        `https://genz-api.onrender.com/api/flights/place-suggestions?query=${query}`
       );
       return response.data;
     } catch (err) {

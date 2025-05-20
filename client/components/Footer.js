@@ -15,21 +15,21 @@ export default function Footer() {
   ];
 
   const dropdownLinks = [
-    { href: "/air-ticket-reservations", label: "Air Ticket Reservations" },
-    { href: "/air-flights-reservations", label: "Air Flights Reservations" },
-    { href: "/air-flights-reservation", label: "Air Flights Reservation" },
-    { href: "/air-ticket-reservation", label: "Air Ticket Reservation" },
-    { href: "/air-tickets-reservations", label: "Air Tickets Reservations" },
-    { href: "/air-poland-reservations", label: "Air Poland Reservations" },
     {
-      href: "/air-switzerland-reservations",
-      label: "Air Switzerland Reservations",
+      href: "/flights-reservation",
+      label: "Flight Reservations",
     },
-    { href: "/business-class-flight-deals", label: "Business Class Deals" },
-    { href: "/cheap-flights-tickets", label: "Cheap Flights Tickets" },
-    { href: "/round-trip-flights", label: "Round Trip Flights" },
-    { href: "/changes", label: "Changes" },
-    { href: "/one-way-flights", label: "One Way Flights" },
+    { href: "/flight-deals/iberia-airlines", label: "Iberia Airlines" },
+    { href: "/flight-deals/vueling-airlines", label: "Vueling Airlines" },
+    { href: "/flight-deals/air-europa-airlines", label: "Air Europa Airlines" },
+    { href: "/flight-deals/volotea-airlines", label: "Volotea Airlines" },
+    { href: "/flight-deals/ryanair-airlines", label: "Ryanair Airlines" },
+    {
+      href: "/flight-deals/air-nostrum-airlines",
+      label: "Air Nostrum Airlines",
+    },
+    { href: "/flight-deals/easyjet-airlines", label: "EasyJet Airlines" },
+    { href: "/flight-deals/copa-airlines", label: "Copa Airlines" },
   ];
 
   return (
