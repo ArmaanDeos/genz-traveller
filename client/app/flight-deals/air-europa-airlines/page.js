@@ -1,4 +1,3 @@
-import Head from "next/head";
 import BannerSection from "@/components/Banner";
 import ClientBg from "@/components/ClientBg";
 import CustomerReviews from "@/components/CustomerReviews";
@@ -17,25 +16,15 @@ import Header from "@/components/Header";
 import HowWeWork from "@/components/HowWeWork";
 import { Suspense } from "react";
 
+export const metadata = {
+  title: "Air Europa Flight Booking | Cheap Air Europa Tickets - GenzTraveller",
+  description:
+    "Book Air Europa airline tickets with GenzTraveller. Enjoy cheap flight tickets, phone-only airfare deals, international flight booking, and 24/7 customer care.",
+};
+
 const AirEuropaAirlines = () => {
   return (
     <>
-      {/* ✅ SEO Meta Tags */}
-      <Head>
-        <title>
-          Air Europa Flight Booking | Cheap Air Europa Tickets - GenzTraveller
-        </title>
-        <meta
-          name="description"
-          content="Book Air Europa airline tickets with GenzTraveller. Enjoy cheap flight tickets, phone-only airfare deals, international flight booking, and 24/7 customer care."
-        />
-        <meta
-          name="keywords"
-          content="Airline Reservation, Flight Reservation, cheap flight tickets, airline phone number, flight booking, airlines tickets, airline tickets booking, cheap flights tickets, flight ticket, plane tickets Deals, flight ticket booking, cheap airline tickets, air ticket booking, booking com flights, cheap plane tickets, flight ticket booking online, airline Customer Care Number, international flights tickets"
-        />
-        <meta name="robots" content="index, follow" />
-      </Head>
-
       <div className="">
         {/* Header */}
         <div className="hidden md:block">

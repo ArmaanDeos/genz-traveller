@@ -17,26 +17,16 @@ import Header from "@/components/Header";
 import HowWeWork from "@/components/HowWeWork";
 import { Suspense } from "react";
 
+export const metadata = {
+  title:
+    " Vueling Airlines Flight Booking | Cheap Vueling Tickets - GenzTraveller",
+  description:
+    "Book Vueling Airlines flights at cheap rates with GenzTraveller. Enjoy exclusive deals, phone-only offers, and 24/7 booking assistance.",
+};
+
 const VuelingAirlines = () => {
   return (
     <>
-      {/* ✅ SEO Meta Tags */}
-      <Head>
-        <title>
-          Vueling Airlines Flight Booking | Cheap Vueling Tickets -
-          GenzTraveller
-        </title>
-        <meta
-          name="description"
-          content="Book Vueling Airlines flights at cheap rates with GenzTraveller. Enjoy exclusive deals, phone-only offers, and 24/7 booking assistance."
-        />
-        <meta
-          name="keywords"
-          content="Vueling booking, cheap Vueling flights, Vueling deals, airline reservation, Vueling phone number, Vueling ticket booking, flight reservation, low cost European flights, Vueling airline customer support"
-        />
-        <meta name="robots" content="index, follow" />
-      </Head>
-
       <div className="">
         {/* Header */}
         <div className="hidden md:block">

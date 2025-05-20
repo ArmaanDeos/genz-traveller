@@ -17,25 +17,15 @@ import Header from "@/components/Header";
 import HowWeWork from "@/components/HowWeWork";
 import { Suspense } from "react";
 
+export const metadata = {
+  title: " Volotea Flight Booking | Cheap Volotea Tickets - GenzTraveller",
+  description:
+    "Book Volotea flights with GenzTraveller for unbeatable fares across Europe. Get cheap tickets, exclusive phone deals, and 24/7 booking assistance.",
+};
+
 const VoloteaAirlines = () => {
   return (
     <>
-      {/* ✅ SEO Meta Tags */}
-      <Head>
-        <title>
-          Volotea Flight Booking | Cheap Volotea Tickets - GenzTraveller
-        </title>
-        <meta
-          name="description"
-          content="Book Volotea flights with GenzTraveller for unbeatable fares across Europe. Get cheap tickets, exclusive phone deals, and 24/7 booking assistance."
-        />
-        <meta
-          name="keywords"
-          content="Volotea booking, cheap Volotea flights, Volotea deals, airline reservation, Volotea phone number, Volotea ticket booking, flight reservation, low cost European flights, Volotea airline customer support"
-        />
-        <meta name="robots" content="index, follow" />
-      </Head>
-
       <div className="">
         {/* Header */}
         <div className="hidden md:block">

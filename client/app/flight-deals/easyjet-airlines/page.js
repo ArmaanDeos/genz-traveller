@@ -17,26 +17,16 @@ import Header from "@/components/Header";
 import HowWeWork from "@/components/HowWeWork";
 import { Suspense } from "react";
 
+export const metadata = {
+  title:
+    "EasyJet Airlines Flight Booking | Cheap EasyJet Tickets - GenzTraveller",
+  description:
+    "Book EasyJet Airlines tickets at the lowest fares. Find cheap domestic and international flights with exclusive phone deals and 24/7 booking support.",
+};
+
 const EasyJetAirlines = () => {
   return (
     <>
-      {/* ✅ SEO Meta Tags */}
-      <Head>
-        <title>
-          EasyJet Airlines Flight Booking | Cheap EasyJet Tickets -
-          GenzTraveller
-        </title>
-        <meta
-          name="description"
-          content="Book EasyJet Airlines tickets at the lowest fares. Find cheap domestic and international flights with exclusive phone deals and 24/7 booking support."
-        />
-        <meta
-          name="keywords"
-          content="EasyJet reservation, EasyJet flights, cheap EasyJet tickets, EasyJet phone number, flight deals, flight booking, airline tickets, plane tickets, cheap flights, book EasyJet online, airline support number, low cost airline Europe"
-        />
-        <meta name="robots" content="index, follow" />
-      </Head>
-
       <div className="">
         {/* Header */}
         <div className="hidden md:block">

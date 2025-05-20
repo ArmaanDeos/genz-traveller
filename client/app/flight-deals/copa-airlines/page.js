@@ -17,25 +17,15 @@ import Header from "@/components/Header";
 import HowWeWork from "@/components/HowWeWork";
 import { Suspense } from "react";
 
+export const metadata = {
+  title: "Copa Airlines Flight Booking | Cheap Copa Tickets - GenzTraveller",
+  description:
+    "Book Air Nostrum airline tickets at unbeatable fares. Enjoy cheap flights, exclusive phone-only deals, and 24/7 airline reservation assistance with GenzTraveller.",
+};
+
 const CopaAirlines = () => {
   return (
     <>
-      {/* ✅ SEO Meta Tags */}
-      <Head>
-        <title>
-          Copa Airlines Flight Booking | Cheap Copa Tickets - GenzTraveller
-        </title>
-        <meta
-          name="description"
-          content="Book Copa Airlines tickets at discounted rates with GenzTraveller. Get cheap international flights, flight deals, and 24/7 reservation support by phone."
-        />
-        <meta
-          name="keywords"
-          content="Airline Reservation, Flight Reservation, cheap flight tickets, airline phone number, flight booking, airlines tickets, airline tickets booking, cheap flights tickets, flight ticket, plane tickets Deals, flight ticket booking, cheap airline tickets, air ticket booking, booking com flights, cheap plane tickets, flight ticket booking online, airline Customer Care Number, international flights tickets"
-        />
-        <meta name="robots" content="index, follow" />
-      </Head>
-
       <div className="">
         {/* Header */}
         <div className="hidden md:block">

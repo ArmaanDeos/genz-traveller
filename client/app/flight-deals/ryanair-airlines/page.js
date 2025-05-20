@@ -17,25 +17,15 @@ import Header from "@/components/Header";
 import HowWeWork from "@/components/HowWeWork";
 import { Suspense } from "react";
 
+export const metadata = {
+  title: "Ryanair Flight Booking | Cheap Ryanair Tickets - GenzTraveller",
+  description:
+    "Book Ryanair flights at affordable prices through GenzTraveller. Unlock cheap airfares, exclusive deals, and 24/7 customer support for Ryanair reservations.",
+};
+
 const RyanairAirlines = () => {
   return (
     <>
-      {/* ✅ SEO Meta Tags */}
-      <Head>
-        <title>
-          Ryanair Flight Booking | Cheap Ryanair Tickets - GenzTraveller
-        </title>
-        <meta
-          name="description"
-          content="Book Ryanair flights at affordable prices through GenzTraveller. Unlock cheap airfares, exclusive deals, and 24/7 customer support for Ryanair reservations."
-        />
-        <meta
-          name="keywords"
-          content="Ryanair booking, cheap Ryanair tickets, Ryanair flights, airline reservation, low cost flights Europe, Ryanair contact, Ryanair customer support, flight deals, book Ryanair Airlines, cheap plane tickets"
-        />
-        <meta name="robots" content="index, follow" />
-      </Head>
-
       <div className="">
         {/* Header */}
         <div className="hidden md:block">

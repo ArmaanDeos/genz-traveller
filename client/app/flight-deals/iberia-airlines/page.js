@@ -17,25 +17,16 @@ import Header from "@/components/Header";
 import HowWeWork from "@/components/HowWeWork";
 import { Suspense } from "react";
 
+export const metadata = {
+  title:
+    "Iberia Airlines Flight Booking | Cheap Iberia Tickets - GenzTraveller",
+  description:
+    "Book Iberia Airlines flights with GenzTraveller at affordable prices. Get the best deals, international flight offers, and 24/7 booking assistance.",
+};
+
 const IberiaAirlines = () => {
   return (
     <>
-      {/* ✅ SEO Meta Tags */}
-      <Head>
-        <title>
-          Iberia Airlines Flight Booking | Cheap Iberia Tickets - GenzTraveller
-        </title>
-        <meta
-          name="description"
-          content="Book Iberia Airlines flights with GenzTraveller at affordable prices. Get the best deals, international flight offers, and 24/7 booking assistance."
-        />
-        <meta
-          name="keywords"
-          content="Iberia reservation, Iberia flights, cheap Iberia tickets, Iberia phone number, book Iberia Airlines, international flights, flight deals, low-cost Iberia flights, airline booking support, European flights, Spain airlines"
-        />
-        <meta name="robots" content="index, follow" />
-      </Head>
-
       <div className="">
         {/* Header */}
         <div className="hidden md:block">
